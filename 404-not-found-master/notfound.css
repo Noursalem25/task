@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins',sans-serif;
+    line-height: 1;
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: flex-start;
+
+}
+.title{
+    color: #333333;
+    letter-spacing: -3px;
+    font-size: 24px;
+    word-spacing: 8px;
+    padding: 20px 24px;
+    
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+}
+.section{
+text-align: center;
+}
+.info{
+
+}
+.section .scarecrow {
+    object-fit: cover;
+    max-width: 300px;
+    width: 286px;
+    height: 220px;
+    padding-left: 45px;
+    padding-right: 45px;
+    top:109px;
+    left:44px;
+
+}
+.section .text{
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    font-size: 48px;
+    padding-left: 24px;
+    padding-right: 1px;
+    text-align: left;
+    line-height: 71px;
+
+}
+.section .paragraph {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: -3.5%;
+    text-align: left;
+    padding-left: 23px; ;
+    padding-right: 24px;
+    color: #4F4F4F;
+}
+.section .action{
+    text-align: left;
+}
+.section .button{
+    background-color: #333333;
+    width: 216px;
+    color:white;
+    text-transform: uppercase;
+    padding: 24px;
+    text-align: center;
+    border:none;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+
+}
+.section .action .button:focus{
+    outline:none;
+}
+ .created-by{
+    color: #BDBDBD;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: auto;
+    padding: 24px 0px;
+     
+}
+ .created-by > span{
+ font-weight: 700;
+}
+@media only screen and (min-width:1024px){
+    .section{
+        display: flex;
+        justify-content: center;
+        gap:118px;
+        align-items: center;
+    }
+    .section .scarecrow{
+        max-width: 540px;
+    }
+    .section .text{
+        max-width: 586px;
+        margin-bottom: 36px;
+    }
+    .section .paragraph{
+        max-width: 381px;
+    }
+}
